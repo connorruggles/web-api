@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>code quiz: do you have what it takes?</title>
+  </head>
+  <body>
+    <!-- homepage -->
+    <div class="home-container" id="home-container">
+      <h1>this is the code quiz.</h1>
+      <p>
+        there are 5 questions and 75 seconds. 10 seconds will be deducted for
+        each incorrect answer. press
+        <span style="font-weight: bolder">START GAME</span> when you're ready to
+        proceed.
+      </p>
+      <p>best of luck.</p>
+      <div class="start-btn-container">
+        <button class="start-btn" id="start-btn" type="button">
+          start game
+        </button>
+      </div>
+    </div>
+    <!-- timer and quiz -->
+    <div class="quiz-container" style="text-align: right">
+      <p class="time"></p>
+      <div class="scorecard"></div>
+      <div id="main"></div>
+      <button class="answer-btn" id="answer1"></button>
+      <button class="answer-btn" id="answer2"></button>
+      <button class="answer-btn" id="answer3"></button>
+      <button class="answer-btn" id="answer4"></button>
+      <div class="feedback"></div>
+      <button id="next-btn">next</button>
+    </div>
+    <!-- game over / submit score -->
+    <section class="scorePage">
+      <div class="highscore-container"></div>
+      <form id="highscore-form" method="post">
+        <input type="input" id="submit-initials" placeholder="your initials" />
+        <button type="button" value="submit" id="saveScoreBtn">
+          save score
+        </button>
+      </form>
+      <button type="button" id="try-again">try again</button>
+      <button type="button" id="highscoreBtn">view highscores</button>
+    </section>
+
+    <section>
+      <ul id="scoreBoard"></ul>
+      <button type="button" id="refresh">try again</button>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
